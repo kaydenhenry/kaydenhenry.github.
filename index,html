@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'poppins', sans-serif;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            width: 100%;
+            background: url('background6.jpg') no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .form-box {
+            position: relative;
+            width: 400px;
+            height: 450px;
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+            backdrop-filter: blur(15px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #fff;
+            text-align: center;
+            height: auto;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        main p {
+            font-size: 18px;
+            color: #fff;
+            max-width: 600px;
+            text-align: center;
+            margin-bottom: 40px;
+            height: 100%;
+        }
+
+        a {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 12px 40px;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 50px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        button {
+            width: 90%;
+            height: 60px;
+            border-radius: 40px;
+            background: #fff;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            font-size: 2em;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="section">
+            <div class="form-box">
+<a>kayden is cool</a>
+            </div>
+        </div>
+    </section>
+    <script>
+        const banButton = document.getElementById('ban-btn');
+        const dre = document.getElementById('2dre');
+
+        banButton.addEventListener('click', function () {
+            localStorage.setItem('banned', 'true');
+            window.location.href = 'ban.html';
+        });
+
+        dre.addEventListener('click', function () {
+            window.location.href = 'home.html';
+        });
+
+
+    </script>
+    <script src="auth.js"></script>
+</body>
+
+</html>
